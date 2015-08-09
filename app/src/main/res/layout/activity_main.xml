@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.taobao.library.MaterialProgressBar
+            app:bar_color="#ff0000"
+            app:rim_color="#33ff0000"
+            app:bar_rimshown="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.taobao.library.MaterialProgressBar
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="70dp" />
+
+        <com.taobao.library.MaterialProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:bar_rimshown="true"
+            app:bar_width="5dp"
+            app:rim_width="6dp"
+            />
+
+    </LinearLayout>
+    <com.taobao.library.MaterialProgressBar
+        android:id="@+id/pb"
+        app:bar_mode="DETERMINATE"
+        app:bar_progress="0.6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@id/pb"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et"
+            android:inputType="numberDecimal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn"
+            android:text="set progress"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialProgressBar">
+        <attr name="bar_color" format="color"/>
+        <attr name="bar_mode" format="enum">
+            <enum name="INDETERMINATE" value="0"/>
+            <enum name="DETERMINATE" value="1"/>
+        </attr>
+        <attr name="bar_width" format="dimension"/>
+        <attr name="bar_progress" format="float"/>
+        <attr name="rim_width" format="dimension"/>
+        <attr name="rim_color" format="color"/>
+        <attr name="bar_rimshown" format="boolean"/>
+    </declare-styleable>
+</resources>
