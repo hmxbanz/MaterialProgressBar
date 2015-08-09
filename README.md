@@ -23,6 +23,7 @@ just like ProgreeBar in android SDK
             android:layout_height="wrap_content" />
 ```
 tips:
+
 1. you can use layout_width/layout_height to control progressbar's width.
 2. only in determinate mode that you can call setProgress().change mode use setMode() function.
 
@@ -40,32 +41,31 @@ tips:
         <attr name="rim_width" format="dimension"/>
         <attr name="rim_color" format="color"/>
         <attr name="bar_rimshown" format="boolean"/>
-    </declare-styleable>
+ </declare-styleable>
 ```
 
 #more samples
 ```
  <com.taobao.library.MaterialProgressBar
-            android:layout_marginLeft="10dp"
-            android:layout_width="60dp"
-            android:layout_height="70dp" />
+    android:layout_marginLeft="10dp"
+    android:layout_width="60dp"
+    android:layout_height="70dp" />
 
 <com.taobao.library.MaterialProgressBar
     android:layout_width="70dp"
     android:layout_height="70dp"
     app:bar_rimshown="true"
     app:bar_width="5dp"
-    app:rim_width="6dp"
-    />
-            
+    app:rim_width="6dp"/>
+    
 <com.taobao.library.MaterialProgressBar
-  android:id="@+id/pb"
-  app:bar_mode="DETERMINATE"
-  app:bar_progress="0.6"
-  android:layout_centerHorizontal="true"
-  android:layout_below="@id/container"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content" />
+   android:id="@+id/pb"
+   app:bar_mode="DETERMINATE"
+   app:bar_progress="0.6"
+   android:layout_centerHorizontal="true"
+   android:layout_below="@id/container"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content" />
 ```
 #ISSURES
 if you found issue,just pull request to me!
